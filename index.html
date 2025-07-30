@@ -2,40 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AiAintI | IAintAi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AiAintI</title>
   <style>
     body {
       margin: 0;
       font-family: Courier, monospace;
-      background-color: #f8f5f0;
+      background-color: #fdfaf6;
     }
 
-    header {
+    .header, .footer {
       display: flex;
+      width: 100%;
       height: 100px;
-      font-size: 36px;
       font-weight: bold;
-      color: #111;
+      font-size: 32px;
     }
 
-    .left-header, .right-header {
+    .header .left, .footer .left {
+      background-color: #58191b;
+      color: white;
       width: 50%;
       display: flex;
       align-items: center;
-      height: 100%;
-      padding: 0 20px;
-    }
-
-    .left-header {
-      background-color: #581d1d;
-      color: white;
       justify-content: flex-start;
+      padding-left: 40px;
     }
 
-    .right-header {
-      background-color: #e6dccf;
+    .header .right, .footer .right {
+      background-color: #e7dfd3;
+      color: black;
+      width: 50%;
+      display: flex;
+      align-items: center;
       justify-content: flex-end;
+      padding-right: 40px;
     }
 
     .grid {
@@ -43,63 +44,61 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       padding: 40px;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .box {
-      border: 1px solid #333;
+      background-color: #fff;
+      border: 2px solid #ccc;
       padding: 20px;
       text-align: center;
-      background-color: #fff;
-      font-size: 16px;
+      font-weight: bold;
     }
 
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #581d1d;
-      color: white;
-      padding: 10px 20px;
+    .footer {
       font-size: 14px;
-      font-family: Courier, monospace;
+      height: 60px;
+    }
+
+    .footer .left {
+      justify-content: flex-start;
+      padding-left: 20px;
+    }
+
+    .footer .right {
+      justify-content: flex-end;
+      padding-right: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="left-header">AiAintI</div>
-    <div class="right-header">IAintAi</div>
-  </header>
+  <div class="header">
+    <div class="left">AiAintI</div>
+    <div class="right">IAintAi</div>
+  </div>
 
-  <main>
-    <div class="grid">
-      <div class="box">Claude</div>
-      <div class="box">Gemini</div>
-      <div class="box">Mistral</div>
-      <div class="box">Compression</div>
-      <div class="box">Prompt Complexity</div>
-      <div class="box">Session Depth</div>
-      <div class="box">Cross-Threading</div>
-      <div class="box">Token Throughput</div>
-      <div class="box">Signal Lock</div>
-      <div class="box">Drift Ratio</div>
-      <div class="box">Vibe Check</div>
-      <div class="box">Alignment Index</div>
-      <div class="box">ChatGPT</div>
-      <div class="box">SignalAF</div>
-      <div class="box">Signal Location</div>
-    </div>
-  </main>
+  <div class="grid">
+    <div class="box">Claude</div>
+    <div class="box">Gemini</div>
+    <div class="box">Mistral</div>
+    <div class="box">Compression</div>
+    <div class="box">Prompt Complexity</div>
+    <div class="box">Session Depth</div>
+    <div class="box">Cross-Threading</div>
+    <div class="box">Token Throughput</div>
+    <div class="box">Signal Lock</div>
+    <div class="box">Drift Ratio</div>
+    <div class="box">Vibe Check</div>
+    <div class="box">Alignment Index</div>
+    <div class="box">ChatGPT</div>
+    <div class="box">SignalAF</div>
+    <div class="box">Signal Location</div>
+  </div>
 
-  <footer>
-    <div>BurnMyDays™ © 2025</div>
-    <div>Contact | Privacy | @SignalAF — Cards Burned: 9,324</div>
-  </footer>
+  <div class="footer">
+    <div class="left">BurnMyDays© 2025</div>
+    <div class="right">Contact | Privacy | @SignalAF – Cards Burned: 9,324</div>
+  </div>
 </body>
 </html>
-
-
-✅ Full-page layout locked. Header matches
-
