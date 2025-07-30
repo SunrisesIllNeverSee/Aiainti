@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AiAintI</title>
+  <title>BurnMyDays / AiAintI</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: Futura, sans-serif;
+      font-family: Courier, monospace;
+      background: white;
     }
 
+    /* HEADER SPLIT */
     .split-banner {
       display: flex;
-      height: 20vh;
       width: 100%;
+      height: 20vh;
     }
 
     .left-half {
       width: 50%;
-      background-color: #5b1212; /* Oxblood */
+      background-color: #5b1212;
       color: white;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding-left: 50%; /* Start text at center */
+      padding-left: 50%;
       font-size: 3rem;
+      font-family: Futura, sans-serif;
       font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -33,25 +36,84 @@
 
     .right-half {
       width: 50%;
-      background-color: #f1e7d0; /* Bone white */
+      background-color: #f1e7d0;
       color: #111;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      padding-right: 50%; /* End text at center */
+      padding-right: 50%;
       font-size: 3rem;
+      font-family: Futura, sans-serif;
       font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
+    }
+
+    /* GRID SECTION */
+    .grid-section {
+      background: white;
+      padding: 2rem 1rem;
+      min-height: 68vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      justify-items: center;
+      align-items: start;
+    }
+
+    .box {
+      background: #ffffff;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 220px;
+      font-family: Courier, monospace;
+    }
+
+    footer {
+      background: #5b1212;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      height: auto;
     }
   </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <div class="split-banner">
   <div class="left-half">AiAintI</div>
   <div class="right-half">IAintAi</div>
 </div>
+
+<!-- GRID -->
+<div class="grid-section">
+  <div class="box">Claude</div>
+  <div class="box">Gemini</div>
+  <div class="box">Mistral</div>
+  <div class="box">Compression</div>
+  <div class="box">Prompt Complexity</div>
+  <div class="box">Session Depth</div>
+  <div class="box">Cross-Threading</div>
+  <div class="box">Token Throughput</div>
+  <div class="box">Signal Lock</div>
+  <div class="box">Drift Ratio</div>
+  <div class="box">Vibe Check</div>
+  <div class="box">Alignment Index</div>
+  <div class="box">ChatGPT</div>
+  <div class="box">SignalAF</div>
+  <div class="box">Signal Location</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  BurnMyDays™ © 2025 | Contact | Privacy | @SignalAF<br>
+  Cards Burned: 9,324
+</footer>
 
 </body>
 </html>
