@@ -2,107 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AiAintI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AiAintI | IAintAi</title>
   <style>
     body {
       margin: 0;
       font-family: Courier, monospace;
+      background-color: #f8f5f0;
     }
 
-    .header,
-    .footer {
+    header {
       display: flex;
-      height: 80px;
+      height: 100px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .left-header, .right-header {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px;
+    }
+
+    .left-header {
+      background-color: #581d1d;
       color: white;
-    }
-
-    .header-left,
-    .footer-left {
-      background-color: #5b1212;
-      flex: 1;
-      display: flex;
-      align-items: center;
       justify-content: flex-start;
-      padding-left: 20px;
     }
 
-    .header-right,
-    .footer-right {
-      background-color: #f1e7d0;
-      flex: 1;
-      display: flex;
-      align-items: center;
+    .right-header {
+      background-color: #e6dccf;
       justify-content: flex-end;
-      padding-right: 20px;
-      color: black;
     }
 
-    .header-left h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .header-right h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: linear-gradient(to right, #5b1212 50%, #f1e7d0 50%);
-      padding: 40px 10px;
-      gap: 10px;
-      min-height: 70vh;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     .box {
-      background-color: white;
-      border: 1px solid #aaa;
-      padding: 10px 20px;
-      min-width: 140px;
+      border: 1px solid #333;
+      padding: 20px;
       text-align: center;
+      background-color: #fff;
+      font-size: 16px;
     }
 
-    .footer {
-      font-size: 0.8em;
-    }
-
-    .footer-left,
-    .footer-right {
+    footer {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+      background-color: #581d1d;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: Courier, monospace;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <div class="header-left"><h1>AiAintI</h1></div>
-    <div class="header-right"><h1>IAintAi</h1></div>
-  </div>
+  <header>
+    <div class="left-header">AiAintI</div>
+    <div class="right-header">IAintAi</div>
+  </header>
 
-  <div class="main">
-    <div class="box">Claude</div>
-    <div class="box">Gemini</div>
-    <div class="box">Mistral</div>
-    <div class="box">Compression</div>
-    <div class="box">Prompt Complexity</div>
-    <div class="box">Session Depth</div>
-    <div class="box">Cross-Threading</div>
-    <div class="box">Token Throughput</div>
-    <div class="box">Signal Lock</div>
-    <div class="box">Drift Ratio</div>
-    <div class="box">Vibe Check</div>
-    <div class="box">Alignment Index</div>
-    <div class="box">ChatGPT</div>
-    <div class="box">SignalAF</div>
-    <div class="box">Signal Location</div>
-  </div>
+  <main>
+    <div class="grid">
+      <div class="box">Claude</div>
+      <div class="box">Gemini</div>
+      <div class="box">Mistral</div>
+      <div class="box">Compression</div>
+      <div class="box">Prompt Complexity</div>
+      <div class="box">Session Depth</div>
+      <div class="box">Cross-Threading</div>
+      <div class="box">Token Throughput</div>
+      <div class="box">Signal Lock</div>
+      <div class="box">Drift Ratio</div>
+      <div class="box">Vibe Check</div>
+      <div class="box">Alignment Index</div>
+      <div class="box">ChatGPT</div>
+      <div class="box">SignalAF</div>
+      <div class="box">Signal Location</div>
+    </div>
+  </main>
 
-  <div class="footer">
-    <div class="footer-left">BurnMyDays© 2025</div>
-    <div class="footer-right">Contact | Privacy | @SignalAF — Cards Burned: 9,324</div>
-  </div>
+  <footer>
+    <div>BurnMyDays™ © 2025</div>
+    <div>Contact | Privacy | @SignalAF — Cards Burned: 9,324</div>
+  </footer>
 </body>
 </html>
+
+
+✅ Full-page layout locked. Header matches
+
