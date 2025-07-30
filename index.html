@@ -12,44 +12,37 @@
       background: white;
     }
 
-    /* HEADER SPLIT */
     .split-banner {
       display: flex;
-      width: 100%;
       height: 20vh;
+      width: 100%;
+    }
+
+    .left-half, .right-half {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      font-family: Futura, sans-serif;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     .left-half {
-      width: 50%;
       background-color: #5b1212;
       color: white;
-      display: flex;
       justify-content: flex-start;
-      align-items: center;
       padding-left: 50%;
-      font-size: 3rem;
-      font-family: Futura, sans-serif;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
     }
 
     .right-half {
-      width: 50%;
       background-color: #f1e7d0;
       color: #111;
-      display: flex;
       justify-content: flex-end;
-      align-items: center;
       padding-right: 50%;
-      font-size: 3rem;
-      font-family: Futura, sans-serif;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
     }
 
-    /* GRID SECTION */
     .grid-section {
       background: white;
       padding: 2rem 1rem;
@@ -78,19 +71,18 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.85rem;
-      height: auto;
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- SPLIT HEADER -->
 <div class="split-banner">
   <div class="left-half">AiAintI</div>
   <div class="right-half">IAintAi</div>
 </div>
 
-<!-- GRID -->
+<!-- BOX GRID -->
 <div class="grid-section">
   <div class="box">Claude</div>
   <div class="box">Gemini</div>
