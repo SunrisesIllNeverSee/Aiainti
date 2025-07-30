@@ -2,66 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BurnMyDays</title>
+  <title>BurnMyDays.com</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #fdfaf5; color: #111; }
-    header { background: #58151c; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    main { background: #fdfaf5; padding: 2rem; max-width: 1000px; margin: auto; }
-    .calc-block { background: #f3efe6; height: 200px; display: flex; align-items: center; justify-content: center; margin: 2rem 0; border-radius: 6px; }
-    .stats-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin: 1.5rem 0; }
-    .box { background: white; padding: 1rem; border: 1px solid #ddd; border-radius: 6px; text-align: center; cursor: pointer; }
-    .row1 .box { background: #fffbe6; } /* Softball */
-    .row2 .box { background: #f0efff; } /* Models */
-    .row3 .box { background: #fff0f0; } /* Core Metrics */
-    footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #666; margin-top: 4rem; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #ffffff; color: #111; }
+    header { background: #5b1212; color: white; padding: 1rem; text-align: center; font-weight: bold; }
+    main { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
+    .calc-block { background: #f1e7d0; padding: 2rem; text-align: center; margin-bottom: 2rem; border-radius: 6px; font-style: italic; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .box { background: #ffffff; padding: 1rem; text-align: center; border: 1px solid #ddd; border-radius: 4px; }
+    footer { background: #5b1212; color: white; text-align: center; padding: 2rem 1rem; font-size: 0.85rem; }
   </style>
 </head>
 <body>
 
 <header>
-  <div><strong>BurnMyDays</strong></div>
-  <nav><a href="#">Contact</a></nav>
+  BurnMyDays.com
 </header>
 
 <main>
-  
+
   <div class="calc-block">
-    <em>Calculator Placeholder</em>
+    [ Calculator Placeholder ]
   </div>
 
-  <!-- 🟨 Row 1 – Softball Stats -->
-  <div class="stats-row row1">
-    <div class="box">Total Messages</div>
-    <div class="box">Account Age</div>
-    <div class="box">Composition</div>
-    <div class="box">Message Volume</div>
-    <div class="box">Beacon Tower</div>
+  <div class="stats-row">
+    <div class="box">GPT-4</div>
+    <div class="box">Claude</div>
+    <div class="box">Gemini</div>
+    <div class="box">Mistral</div>
+    <div class="box">LLaMA</div>
   </div>
 
-  <!-- 🟪 Row 2 – Chatbot Models -->
-  <div class="stats-row row2">
-    <div class="box" onclick="alert('Gemini: Coming Soon')">Gemini</div>
-    <div class="box" onclick="alert('Claude: Coming Soon')">Claude</div>
-    <div class="box" onclick="alert('ChatGPT: Coming Soon')">ChatGPT</div>
-    <div class="box" onclick="alert('Grok: Coming Soon')">Grok</div>
-    <div class="box" onclick="alert('LLaMA: Coming Soon')">LLaMA</div>
-  </div>
-
-  <!-- 🟥 Row 3 – Core Signal Metrics -->
-  <div class="stats-row row3">
-    <div class="box">Token Throughput</div>
+  <div class="stats-row">
+    <div class="box">Compression</div>
+    <div class="box">Prompt Complexity</div>
     <div class="box">Session Depth</div>
-    <div class="box">Promplexity</div>
-    <div class="box">Thread-X</div>
-    <div class="box" onclick="alert('You’ve been flagged as Architect Class.\nView leaderboard at SignalAF.com')">SignalAF</div>
+    <div class="box">Cross-Threading</div>
+    <div class="box">Token Throughput</div>
+  </div>
+
+  <div class="stats-row">
+    <div class="box">Signal Lock</div>
+    <div class="box">Drift Ratio</div>
+    <div class="box">Vibe Check</div>
+    <div class="box">Alignment Index</div>
+    <div class="box">Signal Location</div>
   </div>
 
 </main>
 
 <footer>
-  BurnMyDays™ © 2025 — All signal rights reserved.<br>
-  Site by <strong>Luthen™</strong> · Scaffold Mode Active · No AI left behind.
+  BurnMyDays™ © 2025 | Contact | Privacy | @SignalAF<br>
+  Cards Burned: 9,324
 </footer>
 
 </body>
