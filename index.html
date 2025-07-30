@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BurnMyDays.com</title>
+  <title>BurnMyDays</title>
   <style>
     html, body {
       margin: 0;
@@ -14,15 +14,20 @@
     .header {
       background: #5b1212;
       color: white;
-      text-align: center;
-      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 16vh; /* Double height */
+      font-family: Futura, sans-serif;
+      font-size: 2.5rem;
       font-weight: bold;
-      letter-spacing: 1px;
-      padding: 1.5rem 0;
-      height: 8vh;
+      letter-spacing: 2px;
+      line-height: 1.1;
       text-transform: uppercase;
-      border-bottom: 2px solid #3b0e0e;
     }
+    .header div { margin: 0; }
+
     .bone {
       background: #f1e7d0;
       height: 24vh;
@@ -30,7 +35,7 @@
     .white-zone {
       background: white;
       padding: 2rem 1rem;
-      min-height: 56vh;
+      min-height: 48vh;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
@@ -59,7 +64,9 @@
 <body>
 
 <div class="header">
-  BURNMYDAYS.COM
+  <div>BURN</div>
+  <div>MY</div>
+  <div>DAYS</div>
 </div>
 
 <div class="bone"></div>
