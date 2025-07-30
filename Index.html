@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BurnMyDays.com</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fdfaf5; color: #111; }
+    header { background: #58151c; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin-left: 1.5rem; text-decoration: none; font-weight: bold; }
+    main { padding: 2rem; max-width: 900px; margin: auto; text-align: center; }
+    .cta { margin: 2rem 0; }
+    .stats-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .box { background: white; padding: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+    button { padding: 0.75rem 1.5rem; background: #58151c; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #666; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>BurnMyDays.com</strong></div>
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Leaderboard</a>
+  </nav>
+</header>
+
+<main>
+  <h1>How many days do you have left?</h1>
+  <p>Let’s set one on fire.</p>
+  
+  <div class="cta">
+    <button onclick="alert('vCard builder coming soon')">Build My vCard</button>
+  </div>
+
+  <section>
+    <h3>Soft Stats</h3>
+    <div class="stats-row">
+      <div class="box">Total Messages</div>
+      <div class="box">Account Age</div>
+      <div class="box">Message Volume</div>
+      <div class="box">Composition %</div>
+      <div class="box">Beacon Tower</div>
+    </div>
+
+    <h3>Signal Metrics</h3>
+    <div class="stats-row">
+      <div class="box">Token Throughput</div>
+      <div class="box">Session Depth</div>
+      <div class="box">Promplexity</div>
+      <div class="box">Thread-X Index</div>
+      <div class="box">Compression Ratio</div>
+    </div>
+
+    <h3>Derived Ratings</h3>
+    <div class="stats-row">
+      <div class="box">Signal Class</div>
+      <div class="box">Drift Ratio</div>
+      <div class="box">SLR %</div>
+      <div class="box">Global Percentile</div>
+      <div class="box">∆ From Transmitter</div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <button onclick="alert('Share & Submit Coming Soon')">Share My Burn</button>
+  </div>
+</main>
+
+<footer>
+  © 2025 BurnMyDays™ — All signal rights reserved.<br>
+  This leaderboard is not a product. It’s a mirror.
+</footer>
+
+</body>
+</html>
