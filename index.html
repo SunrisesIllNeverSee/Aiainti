@@ -1,86 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>AiAintAi</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Futura', sans-serif;
-            background-color: #fdf9f2;
-        }
-        .header, .footer {
-            display: flex;
-            height: 25px;
-            color: white;
-        }
-        .header-left, .header-right, .footer-left, .footer-right {
-            background-color: #581111;
-            width: 35%;
-        }
-        .header-center, .footer-center {
-            background-color: #fdf9f2;
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            color: black;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            padding: 40px;
-            text-align: center;
-        }
-        .box {
-            border: 1px solid #444;
-            padding: 16px;
-            background-color: #f9f9f9;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AiAintI | IAintAi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Courier, monospace;
+      background-color: #fdfaf6;
+    }
+
+    header {
+      display: flex;
+      width: 100%;
+      height: 120px;
+      font-family: Futura, sans-serif;
+    }
+
+    .header-left, .header-right, .header-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .header-left {
+      background-color: #5b1212;
+      color: #f1e7d0;
+      width: 33.33%;
+      font-size: 40px;
+    }
+
+    .header-center {
+      background-color: #fdfaf6;
+      color: black;
+      width: 33.33%;
+      font-size: 20px;
+    }
+
+    .header-right {
+      background-color: #f1e7d0;
+      color: #5b1212;
+      width: 33.33%;
+      font-size: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .box {
+      border: 1px solid #333;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      font-size: 16px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #581d1d;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: Courier, monospace;
+    }
+  </style>
 </head>
 <body>
-
-<div class="header">
-    <div class="header-left"></div>
+  <header>
+    <div class="header-left">AiAintI</div>
     <div class="header-center">
-        <div>AiAintAi</div>
-        <div>AiAintAi</div>
-        <div>AiAintAi</div>
+      <div>AiAintIAintAi</div>
+      <div>AiAintIAintAi</div>
+      <div>AiAintIAintAi</div>
     </div>
-    <div class="header-right"></div>
-</div>
+    <div class="header-right">IAintAi</div>
+  </header>
 
-<div class="container">
-    <div class="box">Claude</div>
-    <div class="box">Gemini</div>
-    <div class="box">Mistral</div>
-    <div class="box">Compression</div>
-    <div class="box">Prompt Complexity</div>
-    <div class="box">Session Depth</div>
-    <div class="box">Cross-Threading</div>
-    <div class="box">Token Throughput</div>
-    <div class="box">Signal Lock</div>
-    <div class="box">Drift Ratio</div>
-    <div class="box">Vibe Check</div>
-    <div class="box">Alignment Index</div>
-    <div class="box">ChatGPT</div>
-    <div class="box">SignalAF</div>
-    <div class="box">Signal Location</div>
-</div>
-
-<div class="footer">
-    <div class="footer-left"></div>
-    <div class="footer-center">
-        <div>AiAintAi</div>
-        <div>AiAintAi</div>
-        <div>AiAintAi</div>
+  <main>
+    <div class="grid">
+      <div class="box">Claude</div>
+      <div class="box">Gemini</div>
+      <div class="box">Mistral</div>
+      <div class="box">Compression</div>
+      <div class="box">Prompt Complexity</div>
+      <div class="box">Session Depth</div>
+      <div class="box">Cross-Threading</div>
+      <div class="box">Token Throughput</div>
+      <div class="box">Signal Lock</div>
+      <div class="box">Drift Ratio</div>
+      <div class="box">Vibe Check</div>
+      <div class="box">Alignment Index</div>
+      <div class="box">ChatGPT</div>
+      <div class="box">SignalAF</div>
+      <div class="box">Signal Location</div>
     </div>
-    <div class="footer-right"></div>
-</div>
+  </main>
 
+  <footer>
+    <div>BurnMyDays© 2025</div>
+    <div>Contact | Privacy | @SignalAF – Cards Burned: 9,324</div>
+  </footer>
 </body>
 </html>
