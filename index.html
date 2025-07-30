@@ -7,32 +7,35 @@
     html, body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: Courier, monospace;
       height: 100%;
       background: #ffffff;
     }
     .header {
-      background: #5b1212; /* Oxblood */
+      background: #5b1212;
       color: white;
       text-align: center;
+      font-size: 1.8rem;
       font-weight: bold;
-      padding: 1rem;
-      height: 8vh; /* 1/3 of Bone section height */
+      letter-spacing: 1px;
+      padding: 1.2rem;
+      height: 8vh;
+      text-transform: uppercase;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     .bone {
-      background: #f1e7d0; /* Bone white */
-      height: 24vh; /* 1/3 of total page height */
+      background: #f1e7d0;
+      height: 24vh;
     }
     .white-zone {
       background: white;
       padding: 2rem 1rem;
-      min-height: 56vh; /* Remaining page */
-    }
-    .stats-row {
+      min-height: 56vh;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
-      margin-bottom: 2rem;
+      justify-items: center;
+      align-items: start;
     }
     .box {
       background: #ffffff;
@@ -40,14 +43,16 @@
       text-align: center;
       border: 1px solid #ddd;
       border-radius: 4px;
+      width: 100%;
+      max-width: 220px;
     }
     footer {
-      background: #5b1212; /* Oxblood */
+      background: #5b1212;
       color: white;
       text-align: center;
       padding: 1rem;
       font-size: 0.85rem;
-      height: 4vh; /* Half height of header */
+      height: 4vh;
     }
   </style>
 </head>
@@ -60,29 +65,21 @@
 <div class="bone"></div>
 
 <div class="white-zone">
-  <div class="stats-row">
-    <div class="box">GPT-4</div>
-    <div class="box">Claude</div>
-    <div class="box">Gemini</div>
-    <div class="box">Mistral</div>
-    <div class="box">LLaMA</div>
-  </div>
-
-  <div class="stats-row">
-    <div class="box">Compression</div>
-    <div class="box">Prompt Complexity</div>
-    <div class="box">Session Depth</div>
-    <div class="box">Cross-Threading</div>
-    <div class="box">Token Throughput</div>
-  </div>
-
-  <div class="stats-row">
-    <div class="box">Signal Lock</div>
-    <div class="box">Drift Ratio</div>
-    <div class="box">Vibe Check</div>
-    <div class="box">Alignment Index</div>
-    <div class="box">Signal Location</div>
-  </div>
+  <div class="box">Claude</div>
+  <div class="box">Gemini</div>
+  <div class="box">Mistral</div>
+  <div class="box">Compression</div>
+  <div class="box">Prompt Complexity</div>
+  <div class="box">Session Depth</div>
+  <div class="box">Cross-Threading</div>
+  <div class="box">Token Throughput</div>
+  <div class="box">Signal Lock</div>
+  <div class="box">Drift Ratio</div>
+  <div class="box">Vibe Check</div>
+  <div class="box">Alignment Index</div>
+  <div class="box">Signal Location</div>
+  <div class="box">ChatGPT</div>
+  <div class="box">SignalAF</div>
 </div>
 
 <footer>
