@@ -2,108 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AiAintI | BurnMyDays</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AiAintI</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       font-family: Courier, monospace;
-      background: #fff;
     }
 
-    .split-header {
+    .header,
+    .footer {
       display: flex;
-      width: 100%;
       height: 80px;
+      color: white;
     }
 
-    .left-header, .right-header {
-      width: 50%;
+    .header-left,
+    .footer-left {
+      background-color: #5b1212;
+      flex: 1;
       display: flex;
       align-items: center;
-      padding: 0 2rem;
-      font-family: Futura, sans-serif;
-      font-weight: bold;
-      font-size: 2.2rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .left-header {
-      background-color: #5b1212;
-      color: white;
       justify-content: flex-start;
+      padding-left: 20px;
     }
 
-    .right-header {
+    .header-right,
+    .footer-right {
       background-color: #f1e7d0;
-      color: #111;
+      flex: 1;
+      display: flex;
+      align-items: center;
       justify-content: flex-end;
+      padding-right: 20px;
+      color: black;
     }
 
-    .grid-section {
-      background: white;
-      padding: 2rem 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      justify-items: center;
-      align-items: start;
+    .header-left h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .header-right h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: linear-gradient(to right, #5b1212 50%, #f1e7d0 50%);
+      padding: 40px 10px;
+      gap: 10px;
+      min-height: 70vh;
     }
 
     .box {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 1rem;
-      width: 100%;
-      max-width: 220px;
+      background-color: white;
+      border: 1px solid #aaa;
+      padding: 10px 20px;
+      min-width: 140px;
       text-align: center;
-      font-family: Courier, monospace;
     }
 
-    footer {
-      background-color: #5b1212;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.85rem;
-      width: 100%;
+    .footer {
+      font-size: 0.8em;
+    }
+
+    .footer-left,
+    .footer-right {
+      align-items: center;
     }
   </style>
 </head>
 <body>
+  <div class="header">
+    <div class="header-left"><h1>AiAintI</h1></div>
+    <div class="header-right"><h1>IAintAi</h1></div>
+  </div>
 
-<!-- HEADER -->
-<div class="split-header">
-  <div class="left-header">AiAintI</div>
-  <div class="right-header">IAintAi</div>
-</div>
+  <div class="main">
+    <div class="box">Claude</div>
+    <div class="box">Gemini</div>
+    <div class="box">Mistral</div>
+    <div class="box">Compression</div>
+    <div class="box">Prompt Complexity</div>
+    <div class="box">Session Depth</div>
+    <div class="box">Cross-Threading</div>
+    <div class="box">Token Throughput</div>
+    <div class="box">Signal Lock</div>
+    <div class="box">Drift Ratio</div>
+    <div class="box">Vibe Check</div>
+    <div class="box">Alignment Index</div>
+    <div class="box">ChatGPT</div>
+    <div class="box">SignalAF</div>
+    <div class="box">Signal Location</div>
+  </div>
 
-<!-- BOX GRID -->
-<div class="grid-section">
-  <div class="box">Claude</div>
-  <div class="box">Gemini</div>
-  <div class="box">Mistral</div>
-  <div class="box">Compression</div>
-  <div class="box">Prompt Complexity</div>
-  <div class="box">Session Depth</div>
-  <div class="box">Cross-Threading</div>
-  <div class="box">Token Throughput</div>
-  <div class="box">Signal Lock</div>
-  <div class="box">Drift Ratio</div>
-  <div class="box">Vibe Check</div>
-  <div class="box">Alignment Index</div>
-  <div class="box">ChatGPT</div>
-  <div class="box">SignalAF</div>
-  <div class="box">Signal Location</div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  BurnMyDays™ © 2025 | Contact | Privacy | @SignalAF<br>
-  Cards Burned: 9,324
-</footer>
-
+  <div class="footer">
+    <div class="footer-left">BurnMyDays© 2025</div>
+    <div class="footer-right">Contact | Privacy | @SignalAF — Cards Burned: 9,324</div>
+  </div>
 </body>
 </html>
