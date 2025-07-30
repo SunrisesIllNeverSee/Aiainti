@@ -1,111 +1,92 @@
+from IPython.display import display, HTML
+
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AiAintIAintAi</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Futura, sans-serif;
-      background-color: #f5f2eb;
-    }
-
-    .header, .footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      height: 80px;
-    }
-
-    .header {
-      background: linear-gradient(to right, #6a1b1a 0%, #6a1b1a 33.33%, #f5f2eb 33.33%, #f5f2eb 66.66%, #6a1b1a 66.66%, #6a1b1a 100%);
-      color: #000;
-    }
-
-    .header-left, .header-right {
-      flex: 1;
-      text-align: center;
-      font-size: 24px;
-    }
-
-    .header-center {
-      flex: 1;
-      text-align: center;
-      font-size: 14px;
-      line-height: 1.3;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      padding: 32px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .box {
-      background-color: #fefefe;
-      border: 1px solid #ccc;
-      padding: 16px;
-      text-align: center;
-      font-family: monospace;
-      font-size: 14px;
-    }
-
-    .footer {
-      background: linear-gradient(to right, #6a1b1a 0%, #6a1b1a 33.33%, #f5f2eb 33.33%, #f5f2eb 66.66%, #6a1b1a 66.66%, #6a1b1a 100%);
-      color: #000;
-      font-size: 12px;
-      height: 60px;
-    }
-
-    .footer-left, .footer-right {
-      flex: 1;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>AiAintAi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Futura', sans-serif;
+            background-color: #fdf9f2;
+        }
+        .header, .footer {
+            display: flex;
+            height: 25px;
+            color: white;
+        }
+        .header-left, .header-right, .footer-left, .footer-right {
+            background-color: #581111;
+            width: 35%;
+        }
+        .header-center, .footer-center {
+            background-color: #fdf9f2;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: black;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 40px;
+            text-align: center;
+        }
+        .box {
+            border: 1px solid #444;
+            padding: 16px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="header-left">AiAintI</div>
+<div class="header">
+    <div class="header-left"></div>
     <div class="header-center">
-      AiAintIAintAi<br>
-      AiAintIAintAi<br>
-      AiAintIAintAi
+        <div>AiAintAi</div>
+        <div>AiAintAi</div>
+        <div>AiAintAi</div>
     </div>
-    <div class="header-right">IAintAi</div>
-  </div>
+    <div class="header-right"></div>
+</div>
 
-  <div class="container">
+<div class="container">
     <div class="box">Claude</div>
     <div class="box">Gemini</div>
     <div class="box">Mistral</div>
-
     <div class="box">Compression</div>
     <div class="box">Prompt Complexity</div>
     <div class="box">Session Depth</div>
-
     <div class="box">Cross-Threading</div>
     <div class="box">Token Throughput</div>
     <div class="box">Signal Lock</div>
-
     <div class="box">Drift Ratio</div>
     <div class="box">Vibe Check</div>
     <div class="box">Alignment Index</div>
-
     <div class="box">ChatGPT</div>
     <div class="box">SignalAF</div>
     <div class="box">Signal Location</div>
-  </div>
+</div>
 
-  <div class="footer">
-    <div class="footer-left">BurnMyDays® 2025</div>
-    <div class="footer-right">Contact | Privacy | @_SignalAF – Cards Burned: 9,324</div>
-  </div>
+<div class="footer">
+    <div class="footer-left"></div>
+    <div class="footer-center">
+        <div>AiAintAi</div>
+        <div>AiAintAi</div>
+        <div>AiAintAi</div>
+    </div>
+    <div class="footer-right"></div>
+</div>
 
 </body>
 </html>
+"""
+
+display(HTML(html_content))
