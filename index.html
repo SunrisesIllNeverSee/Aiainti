@@ -1,94 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BurnMyDays</title>
-  <style>
-    body {
-      font-family: Futura, sans-serif;
-      background-color: #fdfaf5;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    header {
-      background-color: #5a2a2a; /* Oxblood */
-      color: white;
-      padding: 40px 0 20px;
-      font-size: 42px;
-      letter-spacing: 1.5px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-size: 14px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px 40px;
-      justify-items: center;
-      max-width: 800px;
-      margin: 60px auto;
-    }
-
-    .grid div {
-      padding: 18px 24px;
-      border: 1.5px solid #222;
-      background-color: #fff;
-      font-size: 18px;
-    }
-
-    footer {
-      background-color: #5a2a2a;
-      color: white;
-      padding: 25px 0;
-      font-size: 13px;
-      margin-top: 60px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>BurnMyDays</h1>
+    <a href="#contact" class="contact-link">Contact</a>
+  </header>
 
-<header>
-  BurnMyDays
-  <nav>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+  <main>
+    <section class="grid">
+      <!-- Example grid boxes -->
+      <div class="grid-box">Total Messages</div>
+      <div class="grid-box">Account Age</div>
+      <div class="grid-box">Message Volume</div>
+      <div class="grid-box">Composition</div>
+      <div class="grid-box">Beacon Tower</div>
+      <!-- Add remaining rows as needed -->
+    </section>
+    <section class="burn-counter">
+      <span id="counter">Cards Burned: 0</span>
+    </section>
+  </main>
 
-<div class="grid">
-  <div>Total Messages</div>
-  <div>Gemini</div>
-  <div>TT</div>
-  <div>Account Age</div>
-  <div>Grok</div>
-  <div>Session Depth</div>
-  <div>Composition</div>
-  <div>ChatGpt</div>
-  <div>Promplexity</div>
-  <div>Message Volume</div>
-  <div>Mistral</div>
-  <div>X-Thread</div>
-  <div>Signal Location</div>
-  <div>Claude</div>
-  <div>SignalAF</div>
-</div>
+  <footer>
+    <p>Privacy | Contactcards burned in oxblood</p>
+  </footer>
 
-<footer>
-  BurnMyDays© 2025 &nbsp;&nbsp;|&nbsp;&nbsp; Contact | Privacy | @_SignalAF — Cards Burned: 9,324
-</footer>
+  <div class="watermark">this fucked aiaintIAintiai</div>
 
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
