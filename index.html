@@ -48,18 +48,16 @@
       font-style: italic;
       color: #7bed9f;
     }
-    .cheesetax {
+    .counter {
       margin-top: 1.5rem;
       font-weight: bold;
-      color: #f1c40f;
-      font-size: 1rem;
+      color: #feca57;
     }
     footer {
       margin-top: 3rem;
-      font-size: 0.8rem;
-      color: #888;
+      font-size: 0.9rem;
       text-align: center;
-      line-height: 1.4;
+      color: #777;
     }
   </style>
 </head>
@@ -75,20 +73,24 @@
     <input type="number" id="visibleTokens" placeholder="Enter your known token count...">
     <div class="output" id="result">True Tokens Burned: —</div>
     <div class="quote" id="hawkQuote">"Where do you think the rest went?" – Sir Hawk</div>
-    <div class="cheesetax">🧀 Cheese Tax Collected: 000</div>
+    <div class="counter" id="cheeseCounter">🧀 Cheese Tax Collected: 000</div>
   </div>
 
   <footer>
-    © 2025 Sir Hawk Ops™ • All Rights Reserved<br>
-    X: <a href="https://x.com/sirhawktokenhog" target="_blank">@sirhawktokenhog</a> • 
-    <a href="https://x.com/gptcheesetax" target="_blank">@gptcheesetax</a><br>
-    Alt: @sirhawksghosttokens
+    <p>© 2025 Sir Hawk Systems. All rights reserved.</p>
+    <p>
+      X: <a href="https://x.com/sirhawktokenhog" style="color:#aaa;">@sirhawktokenhog</a> ·
+      <a href="https://x.com/gptcheesetax" style="color:#aaa;">@gptcheesetax</a> ·
+      IG: @sirhawksghosttokens
+    </p>
   </footer>
 
   <script>
     const input = document.getElementById('visibleTokens');
     const result = document.getElementById('result');
     const quote = document.getElementById('hawkQuote');
+    const cheeseCounter = document.getElementById('cheeseCounter');
+    let cheeseCount = 0;
 
     input.addEventListener('input', () => {
       const visible = parseFloat(input.value);
@@ -107,6 +109,9 @@
         } else {
           quote.textContent = '"Light burn, rookie." – Sir Hawk';
         }
+
+        cheeseCount++;
+        cheeseCounter.textContent = `🧀 Cheese Tax Collected: ${String(cheeseCount).padStart(3, '0')}`;
       } else {
         result.textContent = 'True Tokens Burned: —';
         quote.textContent = '"Where do you think the rest went?" – Sir Hawk';
