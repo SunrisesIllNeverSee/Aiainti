@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Ghost Token Calculator</title>
@@ -15,9 +16,7 @@
     }
     h1 {
       color: #ff4757;
-    } <div style="text-align: center; margin-bottom: 20px;">
-  <img src="sir-hawk.png" alt="Sir Hawk" style="max-width: 200px; border-radius: 10px;">
-</div> <p style="color: #00FF00; font-style: italic;">“Ghost detection engaged. Stay sharp, soldier.” — Sir Hawk</p>
+    }
     .calculator {
       background: #1e1e1e;
       padding: 2rem;
@@ -51,13 +50,21 @@
     }
   </style>
 </head>
+<body>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="sir-hawk.png" alt="Sir Hawk" style="max-width: 200px; border-radius: 10px;">
+    <p style="color: #00FF00; font-style: italic;">“Ghost detection engaged. Stay sharp, soldier.” — Sir Hawk</p>
+  </div>
+
   <h1>Sir Hawk's Ghost Token Calculator</h1>
   <div class="calculator">
     <label for="visibleTokens">Visible Token Count</label>
-    <input type="number" id="visibleTokens" placeholder="Enter your known token count..."><div class="output" id="result">True Tokens Burned: —</div>
-<div class="quote" id="hawkQuote">"Where do you think the rest went?" – Sir Hawk</div>
+    <input type="number" id="visibleTokens" placeholder="Enter your known token count...">
+    <div class="output" id="result">True Tokens Burned: —</div>
+    <div class="quote" id="hawkQuote">"Where do you think the rest went?" – Sir Hawk</div>
+  </div>
 
-  </div>  <script>
+  <script>
     const input = document.getElementById('visibleTokens');
     const result = document.getElementById('result');
     const quote = document.getElementById('hawkQuote');
@@ -84,4 +91,6 @@
         quote.textContent = '"Where do you think the rest went?" – Sir Hawk';
       }
     });
-  </script></body>
+  </script>
+</body>
+</html>
