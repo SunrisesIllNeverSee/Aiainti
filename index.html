@@ -48,11 +48,24 @@
       font-style: italic;
       color: #7bed9f;
     }
+    .cheesetax {
+      margin-top: 1.5rem;
+      font-weight: bold;
+      color: #f1c40f;
+      font-size: 1rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
   <div style="text-align: center; margin-bottom: 20px;">
-    <img src="https://raw.githubusercontent.com/SunrisesIllNeverSee/Aiainti/main/sir-hawk.png?raw=true" alt="Sir Hawk" style="max-width: 200px; border-radius: 10px;">
+    <img src="https://raw.githubusercontent.com/SunrisesIllNeverSee/Aiainti/main/sir-hawk.png" alt="Sir Hawk" style="max-width: 200px; border-radius: 10px;">
     <p style="color: #00FF00; font-style: italic;">“Ghost detection engaged. Stay sharp, soldier.” — Sir Hawk</p>
   </div>
 
@@ -62,7 +75,15 @@
     <input type="number" id="visibleTokens" placeholder="Enter your known token count...">
     <div class="output" id="result">True Tokens Burned: —</div>
     <div class="quote" id="hawkQuote">"Where do you think the rest went?" – Sir Hawk</div>
+    <div class="cheesetax">🧀 Cheese Tax Collected: 000</div>
   </div>
+
+  <footer>
+    © 2025 Sir Hawk Ops™ • All Rights Reserved<br>
+    X: <a href="https://x.com/sirhawktokenhog" target="_blank">@sirhawktokenhog</a> • 
+    <a href="https://x.com/gptcheesetax" target="_blank">@gptcheesetax</a><br>
+    Alt: @sirhawksghosttokens
+  </footer>
 
   <script>
     const input = document.getElementById('visibleTokens');
