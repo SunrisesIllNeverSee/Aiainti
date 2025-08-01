@@ -48,49 +48,49 @@
       font-style: italic;
       color: #7bed9f;
     }
-    .counter {
-      margin-top: 1.5rem;
-      font-weight: bold;
-      color: #feca57;
-    }
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
+      color: #888;
       text-align: center;
-      color: #777;
     }
   </style>
 </head>
 <body>
+
+  <!-- Hawk Image and Quote -->
   <div style="text-align: center; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/SunrisesIllNeverSee/Aiainti/main/sir-hawk.png" alt="Sir Hawk" style="max-width: 200px; border-radius: 10px;">
     <p style="color: #00FF00; font-style: italic;">“Ghost detection engaged. Stay sharp, soldier.” — Sir Hawk</p>
   </div>
 
   <h1>Sir Hawk's Ghost Token Calculator</h1>
+
+  <!-- Calculator -->
   <div class="calculator">
     <label for="visibleTokens">Visible Token Count</label>
     <input type="number" id="visibleTokens" placeholder="Enter your known token count...">
     <div class="output" id="result">True Tokens Burned: —</div>
     <div class="quote" id="hawkQuote">"Where do you think the rest went?" – Sir Hawk</div>
-    <div class="counter" id="cheeseCounter">🧀 Cheese Tax Collected: 000</div>
   </div>
 
+  <!-- Cheese Counter -->
+  <div id="cheeseCounter" style="margin-top: 2rem; font-size: 1.2rem; color: #f1c40f;">
+    🧀 Cheese Tax Collected: <span id="cheeseAmount">000</span>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Sir Hawk Systems. All rights reserved.</p>
-    <p>
-      X: <a href="https://x.com/sirhawktokenhog" style="color:#aaa;">@sirhawktokenhog</a> ·
-      <a href="https://x.com/gptcheesetax" style="color:#aaa;">@gptcheesetax</a> ·
-      IG: @sirhawksghosttokens
-    </p>
+    © 2025 Sir Hawk’s Ghost Tokens™<br>
+    X-@sirhawksghosttokens | X-@gptcheesetax | X-@sirhawktokenhog
   </footer>
 
+  <!-- Scripts -->
   <script>
+    // Ghost Token Logic
     const input = document.getElementById('visibleTokens');
     const result = document.getElementById('result');
     const quote = document.getElementById('hawkQuote');
-    const cheeseCounter = document.getElementById('cheeseCounter');
-    let cheeseCount = 0;
 
     input.addEventListener('input', () => {
       const visible = parseFloat(input.value);
@@ -109,14 +109,18 @@
         } else {
           quote.textContent = '"Light burn, rookie." – Sir Hawk';
         }
-
-        cheeseCount++;
-        cheeseCounter.textContent = `🧀 Cheese Tax Collected: ${String(cheeseCount).padStart(3, '0')}`;
       } else {
         result.textContent = 'True Tokens Burned: —';
         quote.textContent = '"Where do you think the rest went?" – Sir Hawk';
       }
     });
+
+    // Cheese Counter Logic
+    const cheeseAmountEl = document.getElementById('cheeseAmount');
+    let cheeseCount = localStorage.getItem('cheeseTax') || 0;
+    cheeseCount++;
+    cheeseAmountEl.textContent = cheeseCount.toString().padStart(3, '0');
+    localStorage.setItem('cheeseTax', cheeseCount);
   </script>
 </body>
 </html>
